@@ -1,0 +1,32 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+
+entrepreneur.application.form.label.ticker = Ticker
+entrepreneur.application.form.label.moneyOffer = Oferta de dinero
+entrepreneur.application.form.label.creationMoment = Fecha de creacion
+entrepreneur.application.form.label.statement = Declaración
+entrepreneur.application.form.label.investor = Inversor
+entrepreneur.application.form.label.ticker = Ticker de la Ronda de Inversion
+entrepreneur.application.form.label.status = Estado
+entrepreneur.application.form.label.reason = Justificación
+
+
+entrepreneur.application.list.label.ticker = Ticker
+entrepreneur.application.list.label.creationMoment = Fecha de creacion
+
+
+entrepreneur.application.form.button.status = Cambiar Estado
+entrepreneur.application.form.button.update = Actualizar y mandar justificación
+entrepreneur.application.form.button.return = Volver
+
+
+entrepreneur.application.form.error.spamWordsReason = La Justificacion contiene Palabras de Spam
+entrepreneur.application.error.reason = Para rechazar necesitas una justificación

@@ -1,0 +1,31 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+
+investor.application.form.label.ticker = Ticker
+investor.application.form.label.moneyOffer = Oferta de dinero
+investor.application.form.label.creationMoment = Fecha de creacion
+investor.application.form.label.statement = Declaración
+investor.application.form.label.investor = Inversor
+investor.application.form.label.ticker = Ticker de la Ronda de Inversion
+
+
+investor.application.list.label.ticker = Ticker
+investor.application.list.label.creationMoment = Fecha de creacion
+
+
+investor.application.form.button.create = Crear
+investor.application.form.button.return = Volver
+
+
+investor.application.form.error.spamWordsStatement = La Declaracion contiene Palabras de Spam
+investor.application.form.error.ticker = El formato correcto de los Tickers es SSS-YY-NNNNNN. SSS, las primeras letras del Sector del Emprendedor. YY, los dos ultimos digitos de este año. NNNNNN, un numero entre 000000 y 999999
+investor.application.form.error.zoneEur = Solo se permite la moneda euro, EUR o €
+investor.application.form.error.tickerRepeat = Ticker existente, pruebe con otra
