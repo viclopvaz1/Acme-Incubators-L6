@@ -104,15 +104,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `consumer` (
-       `id` integer not null,
-        `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `credit_card` (
        `id` integer not null,
         `version` integer not null,
@@ -242,15 +233,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `provider` (
-       `id` integer not null,
-        `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `technology_record` (
        `id` integer not null,
         `version` integer not null,
@@ -269,7 +251,9 @@
        `id` integer not null,
         `version` integer not null,
         `description` varchar(1024),
-        `email` varchar(255),
+        `email_display_name` varchar(255),
+        `email_domain` varchar(255),
+        `email_name` varchar(255),
         `indication` bit not null,
         `name` varchar(255),
         `sector` varchar(255),
@@ -283,7 +267,9 @@
        `id` integer not null,
         `version` integer not null,
         `enabled` bit not null,
-        `identity_email` varchar(255),
+        `identity_email_display_name` varchar(255),
+        `identity_email_domain` varchar(255),
+        `identity_email_name` varchar(255),
         `identity_name` varchar(255),
         `identity_surname` varchar(255),
         `password` varchar(255),
@@ -392,11 +378,6 @@
        foreign key (`authenticated_id`) 
        references `authenticated` (`id`);
 
-    alter table `consumer` 
-       add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
-       foreign key (`user_account_id`) 
-       references `user_account` (`id`);
-
     alter table `credit_card` 
        add constraint `FKa4pbn9v8sv66p46fsrke8ow89` 
        foreign key (`banner_id`) 
@@ -449,11 +430,6 @@
 
     alter table `patron` 
        add constraint FK_8xx5nujhuio3advxc2freyu65 
-       foreign key (`user_account_id`) 
-       references `user_account` (`id`);
-
-    alter table `provider` 
-       add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
 
