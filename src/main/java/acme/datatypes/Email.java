@@ -24,7 +24,7 @@ public class Email extends DomainDatatype {
 	@Pattern(regexp = "^[@][a-zA-Z]+([.][a-zA-Z]+)$", message = "default.error.domain")
 	private String				domain;
 
-	@Pattern(regexp = "^[a-zA-Z. -]+$", message = "default.error.domain")
+	@Pattern(regexp = "^[a-zA-Z. -]+ {1}$")
 	private String				displayName;
 
 
@@ -33,7 +33,7 @@ public class Email extends DomainDatatype {
 		StringBuilder result;
 
 		result = new StringBuilder();
-		if (this.displayName == "") {
+		if (this.displayName == null) {
 			result.append("");
 			result.append(this.name);
 			result.append(this.domain);

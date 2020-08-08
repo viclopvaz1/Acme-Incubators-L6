@@ -21,7 +21,7 @@
 	<acme:form-textbox code="administrator.tool-record.label.name" path="name"/>
 	<acme:form-textbox code="administrator.tool-record.label.description" path="description"/>
 	<acme:form-textbox code="administrator.tool-record.label.web" path="web"/>
-	<acme:form-textbox code="administrator.tool-record.label.email" path="email"/>
+	<acme:form-email code="administrator.tool-record.label.email" path="email"/>
 	<acme:form-checkbox code="administrator.tool-record.label.indication" path="indication"/>
 	<acme:form-textbox code="administrator.tool-record.label.star" path="star"/>
 	

@@ -8,10 +8,10 @@ public class FormatterRegistrar implements WebMvcConfigurer {
 
 	@Override
 	public void addFormatters(final FormatterRegistry registry) {
-		EmailFormatter phoneFormatter;
+		EmailFormatter emailFormatter;
 
-		phoneFormatter = new EmailFormatter();
-		registry.addFormatter(phoneFormatter);
+		emailFormatter = new EmailFormatter();
+		registry.addFormatter(emailFormatter);
 	}
 
 }

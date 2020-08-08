@@ -20,13 +20,18 @@ public class EmailFormatter implements Formatter<Email> {
 		assert locale != null;
 
 		String result;
-		String nameText, domainText, displayNameText;
+		//		String nameText, domainText, displayNameText;
 
-		nameText = String.format("%s", object.getName());
-		displayNameText = object.getDisplayName() == null ? " " : String.format(" (%s) ", object.getDisplayName());
-		domainText = String.format("%s", object.getDomain());
+		//		nameText = String.format("%s", object.getName());
+		//		displayNameText = object.getDisplayName() == null ? " " : String.format(" %s < ", object.getDisplayName());
+		//		domainText = object.getDisplayName() == null ? String.format("%s", object.getDomain()) : String.format("%s>", object.getDomain());
+		//
+		//		result = String.format("%s%s%s", displayNameText, nameText, domainText);
+		result = object.getName() + object.getDomain();
 
-		result = String.format("+%s%s%s", displayNameText, nameText, domainText);
+		if (object.getDisplayName() != null || object.getDisplayName() != "") {
+			result = object.getDisplayName() + "<" + result + ">";
+		}
 
 		return result;
 	}
@@ -44,7 +49,7 @@ public class EmailFormatter implements Formatter<Email> {
 
 		String displayName, name, domain;
 
-		displayNameRegex = "[a-zA-Z. -]+";
+		displayNameRegex = "[a-zA-Z. -]+ {1}";
 		nameRegex = "[a-zA-Z0-9.-]{1,64}";
 		domainRegex = "[@][a-zA-Z]+([.][a-zA-Z]+)";
 		emailRegex = String.format(//

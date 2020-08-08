@@ -136,7 +136,7 @@
 		<property name="name" value="Alberto Cordon" />
 		<property name="description" value="This is a example" />
 		<property name="web" value="https://www.abandomoviez.net" />
-		<property name="email" value="alberto@correo.com" />
+		<property name="email" value="Alberto &lt;alberto@correo.com&gt;" />
 		<property name="indication" value="true" />
 		<property name="star" value="4" />
 	</bean>
