@@ -35,6 +35,15 @@
 		<property name="finalMode" value="true" />
 		<property name="patron" ref="patron1Patron" />
 	</bean>
+	
+	<bean name="banner03" class="acme.entities.banners.Banner">
+		<property name="picture"
+			value="https://statics.proyectoclubes.com/images/escudos/teams/cadiz.png" />
+		<property name="slogan" value="Yo soy del Cadiz" />
+		<property name="targetUrl" value="https://www.cadizcf.com" />
+		<property name="finalMode" value="true" />
+		<property name="patron" ref="patron2Patron" />
+	</bean>
 
 	<bean name="creditcard01" class="acme.entities.creditcards.CreditCard">
 		<property name="holderName" value="Cordon" />
@@ -44,6 +53,16 @@
 		<property name="yearExp" value="2021" />
 		<property name="cvv" value="021" />
 		<property name="banner" ref="banner02" />
+	</bean>
+	
+	<bean name="creditcard02" class="acme.entities.creditcards.CreditCard">
+		<property name="holderName" value="Lopez" />
+		<property name="number" value="4294939855393654" />
+		<property name="brand" value="Visa" />
+		<property name="monthExp" value="2" />
+		<property name="yearExp" value="2021" />
+		<property name="cvv" value="021" />
+		<property name="banner" ref="banner03" />
 	</bean>
 
 	<bean name="technologyrecord01" class="acme.entities.technologyrecords.TechnologyRecord">
